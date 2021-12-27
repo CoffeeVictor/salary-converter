@@ -12,8 +12,13 @@ export const SalaryInput: React.FC<ISalaryInputProps> = (props) => {
 
     const {value, setValue} = useCurrency();
 
-    function handleChange(_: string, value: number) {
-        setValue(value / (timeMultiplier));
+    function handleChange(valueAsString: string, valueAsNumber: number) {
+
+        valueAsString = valueAsString.replace('.', '')
+
+        valueAsNumber = Number(valueAsString) / 100;
+
+        setValue(valueAsNumber / (timeMultiplier));
     }
 
     return (
@@ -22,11 +27,9 @@ export const SalaryInput: React.FC<ISalaryInputProps> = (props) => {
                 {rate}
             </FormLabel>
             <NumberInput 
-                min={0} 
-                max={1000000000}
+                min={0}
                 precision={2}
-                step={1}
-                value={(value * timeMultiplier).toFixed(2)}
+                value={(isNaN(value * timeMultiplier) ? 0 : (value * timeMultiplier).toFixed(2))}
                 onChange={handleChange}
             >
                 <NumberInputField fontSize={'large'} fontWeight={'medium'}/>
