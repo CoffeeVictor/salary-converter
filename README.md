@@ -14,6 +14,7 @@ I decided to create it as a Web App so that i could access it from anywhere at a
 
 - React: It has always been my framework/library of choice, i think it's much more productive for a smaller project like this than Angular/Vue/Vanilla JS while also knowing that it could handle scalabillity without any problems.
 - NextJS: While this project doesn't require any type of SSR or SSG the performance boost is really nice. However, the main point of using Next was how easy it is to deploy on Vercel. Having an SSL sertificate, custom domain, deploy, CI/CD and all the other nice features of Vercel with a few commands and for free is just sooo 💖💖 (Love you Vercel).
+- Currency API: I'm consuming [fawazahmed0's Currency API](https://github.com/fawazahmed0/currency-api) to get up to date values on the currencies used via HTTP with the Fetch API.
 - ChakraUI: I've been using Chakra over plain CSS/SASS for the last few months and i'm in love, makes it very easy to maintain a consistent style while i focus all my attention on the "business rules". More important than that, it makes it easier to create responsive layouts, which was the main knowledge i tried to exercise with this project since i wanted it to work both well both on Desktop and Mobile.
 - Typescript: Because at this point i think much of my productivity comes from TS, anything i try to do on JS just takes 30% longer.
 
