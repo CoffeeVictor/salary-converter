@@ -26,6 +26,9 @@ export const SalaryCard: React.FC<ISalaryCardProps> = (props) => {
             <Heading>
                 {currency}
             </Heading>
+            <Heading as="h2" size={'sm'} fontWeight={'medium'} mt={'2'} >
+                {`Calculated as 1.00 USD = ${currencyMultiplier.toFixed(2)} ${currency}`}
+            </Heading>
             <SalaryInput rate="Hourly" timeMultiplier={1 * currencyMultiplier} />
             <SalaryInput rate="Daily" timeMultiplier={8 * currencyMultiplier} />
             <SalaryInput rate="Weekly" timeMultiplier={40 * currencyMultiplier} />
