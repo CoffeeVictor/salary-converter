@@ -52,7 +52,7 @@ const Home: NextPage<IHomeProps> = (props) => {
       <Head>
         <title>Salary Converter</title>
         <meta name="description" content="Easy salary converter with multiple time rates and currencies" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/currency.svg" />
       </Head>
       <Center w={'100vw'} h={'100vh'}>
         <Flex h={'full'} w={'full'} flexWrap={'wrap'} align={'center'}>
