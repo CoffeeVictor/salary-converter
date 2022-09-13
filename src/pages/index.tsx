@@ -29,10 +29,13 @@ export const getStaticProps: GetStaticProps = async () => {
     }
   })
 
+  const HALF_AN_HOUR = 60 * 30
+
   return {
     props: {
       currencyData
-    }
+    },
+    revalidate: HALF_AN_HOUR
   }
 }
 
