@@ -15,7 +15,8 @@ export const getStaticProps: GetStaticProps = async () => {
   const usedCurrencies = [
     'usd',
     'brl',
-    'eur'
+    'eur',
+	'nok'
   ];
 
   const response = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json');
